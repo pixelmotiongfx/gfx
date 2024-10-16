@@ -14,33 +14,19 @@ body{
   background-color: rgb(10, 10, 10);
 }
   
-#thumb{
-            width: 100%;
-            /* background-color: rgb(62, 62, 62); */
-            text-align: center; 
-            z-index: 1;
-            overflow: hidden;
-        }
+
+
 .thumb {
- 
+  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
   padding-top: 80px;
-  max-width: 400px;
-  max-height: 100%;
-  overflow: hidden;
-  z-index: 1;
+  
   }
       
-.vd1{
-  
-  
-  max-width: 1000px;
-  opacity: 100%;
-  overflow: hidden;
-  z-index: -1;
-  
- 
-  
- }
+
 
    
              /* Add a black background color to the top navigation */
@@ -90,31 +76,27 @@ body{
     overflow: hidden;
     
   }
-  .row video{
-    width: 100%;
-            align-content: center;
-            padding: 25px;
-            margin-top: 5px;
-        }
- 
- 
-    </style>
-</head>
-<body>
+  .vd1 {
     
-    
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  z-index: -1;
+ 
+  }
 
+ </style>
+</head>
+
+<body>
  
- <div>
-  <img class="thumb" src="ASSETS/HASHIB STUDION THUMBNAIL.png"  alt="thumbnail">
-  <div class="row">
+<div class="container">
+    <img class="thumb" src="ASSETS/HASHIB STUDION THUMBNAIL.png"  alt="thumbnail">
     <video class="vd1" autoplay loop muted>
     <source src="ASSETS/HOME PAGE BG.mp4">
-     </video>
-     </div>
-   </div>  
-
-  
+  </video>
+</div>
 
 <div class="topnav">
     <a class="active" href="index.html">Home</a>
