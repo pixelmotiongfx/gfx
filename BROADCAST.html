@@ -86,7 +86,30 @@
     background-color: #04AA6D;
     color: white;
   }
+
+.hover-video:hover {
+    filter: brightness(1.1);
+    transition: filter 0.3s;
+    cursor: pointer;
+}
+
     </style>
+
+    
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const video = document.querySelector(".hover-video");
+
+    video.addEventListener('mouseenter', () => {
+        video.play();
+    });
+
+    video.addEventListener('mouseleave', () => {
+        video.pause();
+        video.currentTime = 0; // Optional: Reset to first frame
+    });
+});
+</script>
 </head>
 <body>
 
@@ -95,6 +118,7 @@
     <a class="active" href="/">Home</a>
     <a href="MotionGraphics">Motion Graphics</a>
     <a href="3DModeling">3D MODELING RENDERING</a>
+    <a href="ArchitecterRender">Architecter Render</a>
     <a href="Logoanimation">Logo Animation</a>
     <a href="3DAnimation">Animation</a>
     <a href="SocialAds">Social Media</a>
@@ -106,15 +130,20 @@
   </div> 
 </div>
     <div class="row">
-        <div class="col-sm-4">
-            <video id="v0" src="ASSETS/BROADCAST/YOUNG STASR.mp4"
+       <div class="col-sm-4">
+            <video class="hover-video"
+            src="ASSETS/BROADCAST/YOUNG STASR.mp4"
             poster="ASSETS/BROADCAST/YOUNG STASR.png"
-            width="640" height="400" type="video/mp4" loop controls muted></video>
+            width="640" height="400"
+            loop muted playsinline>
+            </video>
         </div>
         <div class="col-sm-4">
-            <video id="v0" src="ASSETS/BROADCAST/STAR AWARD 2017.mp4"
+            <video class="hover-video" src="ASSETS/BROADCAST/STAR AWARD 2017.mp4"
             poster="ASSETS/BROADCAST/STAR AWARD 2017.png"
-            width="640" height="400" type="video/mp4" loop controls muted></video>
+            width="640" height="400" type="video/mp4"
+            loop muted playsinline>
+            </video>
         </div>
        <div class="col-sm-4">
             <video id="v0" src="ASSETS/BROADCAST/STAR OF POLITICS.mp4"
